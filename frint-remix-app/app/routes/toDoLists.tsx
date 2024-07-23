@@ -110,8 +110,8 @@ export default function ToDoLists () {
         
     )
 
-    const items = enrItem.map(item =>
-        <Item id={item.id} title={item.title} chk={item.checked} cover={item.cover} icon={item.icon} des={item.description} enr={item.enrollment} />
+    const items = enrItem.map((item,index) =>
+        <Item key={index} id={item.id} title={item.title} chk={item.checked} cover={item.cover} icon={item.icon} des={item.description} enr={item.enrollment} />
 
     );
     return (
